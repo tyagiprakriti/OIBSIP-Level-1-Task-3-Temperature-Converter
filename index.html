@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="calcTemp" onsubmit="calculate(); return false">
+            <span class="rg">Welcome to Temperature Convertor</span>
+            <p>Enter the temperature</p>
+        <input type="number" name="temp" id="temp" placeholder="Enter ">
+        <br>
+        <p>Convert</p>
+        <select name="unit" id="unit" >
+            <option value="ke">Kelvin</option>
+            <option value="ce">&#176Celcius</option>
+            <option value="fa">&#176Farenheit</option>
+        </select>
+        <br><p>Into</p>
+        <select name="cunit" id="cunit" >
+            <option value="ke">Kelvin</option>
+            <option value="ce">&#176Celcius</option>
+            <option value="fa">&#176Farenheit</option>
+        </select>
+       <br> 
+       <input type="submit" name="temp" id="submit">
+        <br>
+      <p>The temperature after conversion is</p><span id="result"></span>
+
+    </form>  </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+ 
